@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Rose:wght@300..700&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8F1F2;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header nav {
+    background-color: #006494;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+    font-family: raleway;
+    font-weight: 600;
+}
+
+header nav span a img {
+    /*imagem da fortes na nav*/
+    width: 200px;
+    background-color: #E8F1F2;
+    border-radius: 5px;
+}
+
+header nav span a img:hover {
+    width: 210px;
+    transition: 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(217, 214, 214, 0.719);
+}
+
+header nav ul {
+    /*botões da nav em forma de lista*/
+    margin: auto;
+    text-align: center;
+    display: flex;
+    gap: 2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007BFF;
+    /* Cor ao passar o mouse */
+}
+
+.activelogin,
+.acitveauxilos,
+.activeprojeto,
+.activeajuda {
+    /*mudança do botão quando ele estiver clicado, ou seja, na página selecionada*/
+    height: 30px;
+    width: 140px;
+    border-radius: 5px;
+    text-align: center;
+
+    a {
+        color: #ffffff;
+        /*cor do texto do botão selecionado na nav*/
+    
+    }
+}
+
+
+.activepatrocinadores,
+.activeequipe,
+.activefale {
+    height: 30px;
+    width: 170px;
+    border-radius: 5px;
+    text-align: center;
+
+    a {
+        color: #ffffff;
+        /*cor do texto do botão selecionado na nav*/
+    }
+}
+
+.mainindex { /*main container (pai)*/
+    position: relative;
+    padding: 20px;
+    display: flexbox;
+    overflow: hidden;
+}
+
+/*estabilização das imagens logofortificar e logoweb 
+para todas as páginas ficarem iguais*/
+.logofortificar {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0.5; /* Reduz a opacidade */
+    width: 200px; /* Ajusta o tamanho */
+    z-index: 0; /* Garante que fique por trás do conteúdo */
+}
+
+.logofortificar img {
+    width: 100%; /* Garante que a imagem siga o tamanho do container pai */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.logoiconweb {
+    position: absolute;
+    bottom: -150px;
+    right: -100px;
+    opacity: 0.5; /* Reduz a opacidade */
+    width: 500px; /* Ajusta o tamanho */
+    z-index: 0; /* Garante que fique por trás do conteúdo */
+}
+
+.logoiconweb img {
+    width: 100%; /* Garante que a imagem siga o tamanho do container pai */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.indexconteudo {
+    padding: 3rem;
+    margin: auto;
+    height: 70vh;
+    width: 60%;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(217, 214, 214, 0.719);
+    border-radius: 5px;
+    font-family: raleway;
+    z-index: 1; /* Garante que fique acima das imagens */
+
+    h1 {
+        font-family: red rose;
+        font-size: 2.5rem;
+    }
+
+    p {
+        text-align: justify;
+    }
+}
+
+.indexconteudo img {
+    padding: 3rem;
+    width: 30%;
+}
+
+footer {
+    background-color: #006494;
+    margin: auto;
+    padding: 1rem;
+    height: 10vh;
+    text-align: center;
+    font-family: red rose;
+    font-size: 20px;
+    color: #ffffff;
+}
