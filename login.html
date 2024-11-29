@@ -14,23 +14,46 @@
         <nav>
             <span><a href="./index.html" target="_self" rel="next"><img src="./imagens/logofortes.png"
                         alt="Logo da Fortes."></a></span>
-            <div>
-                <ul>
-                    <li class="activelogin"><a href="./login.html" target="_self">Login</a></li>
+            <ul>
+                <li class="activelogin"><a href="./login.html" target="_self">Login</a></li>
                 <li class="acitveauxilos"><a href="./auxilios.html" target="_self" rel="next">Auxílios</a></li>
                 <li class="activeequipe"><a href="./equipe.html" target="_self" rel="next">Nossa Equipe</a></li>
                 <li class="activeprojeto"><a href="./projetos.html" target="_self" rel="next">Projetos</a></li>
-                <li class="activepatrocinadores"><a href="./patrocinadores.html" target="_self" rel="next">Patrocinadores</a></li>
+                <li class="activepatrocinadores"><a href="./patrocinadores.html" target="_self"
+                        rel="next">Patrocinadores</a></li>
                 <li class="activeajuda"><a href="./ajuda.html" target="_self" rel="next">Ajuda</a></li>
                 <li class="activefale"><a href="./faleconosco.html" target="_self" rel="next">Fale Conosco</a></li>
-                </ul>
-            </div>
+            </ul>
         </nav>
     </header>
     <br>
     <main class="mainlogin">
-
-
+        <div class="loginconteudo">
+            <h1>Faça o seu login:</h1>
+            <br>
+            <br>
+            <form action="processarForm.php" method="get">
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email">
+                <br>
+                <br>
+                <label for="senha">Senha:</label><br>
+                <input type="text" id="senha">
+            </form>
+            <br>
+            <a href="./esquecisenha.html">Esqueci minha senha</a>
+            <br>
+            <br>
+            <form action="">
+                <input class="entrarbutton" type="button" value="Entrar">
+                <br><br>
+                <a href="./cadastro.html" target="_self" rel="next"><input class="cadastrobutton" type="button"
+                        value="Cadastrar-se"></a>
+            </form>
+            <br>
+            <a href="./funcionario.html" target="_self" rel="next">Sou funcionário</a>
+            <br>
+        </div>
         <div class="logofortificar"><img src="./imagens/fortificar.png" alt="imagem do logo fortificar"></div>
         <div class="logoiconweb"><img src="./imagens/iconweb.png" alt="imagem de um globo tecnológico."></div>
     </main>
