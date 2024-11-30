@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js.js" type="text/JavaScript"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navusuario">
+            <span><a href="./index.html" target="_self"><img src="./imagens/logofortes.png"
+                        alt="Logo da Fortes."></a></span>
+            <ul>
+                <li class="butnavactive"><a href="./usuario.html" target="_self">Cadastro do projeto</a></li>
+                <li class="butnavp"><a href="./usuariohistorico.html" target="_self" rel="next">Histórico</a></li>
+                <li class="butnav"><a href="./usufinance.html" target="_self" rel="next">Financeiro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main class="mainusuario">
+        <div class="usuarioconteudo">
+            <h1>Insira as informações do seu projeto/empresa:</h1>
+            <br>
+            <br>
+            <div class="usuarioconteudo2">
+                <form class="ladoausuario1" action="">
+                    <div class="nomecdp">
+                        <label for="nomeprojeto">Nome do projeto/empresa:</label><br>
+                        <input type="text" id="nomeprojeto">
+                    </div>
+                    <br><br>
+                    <p>Localização:</p>
+                    <br>
+                    <div class="localizacaoprojeto">
+                        <div class="localizacaoprojeto1">
+                            <label for="cepcadastroprojeto">CEP:</label><br>
+                            <input type="text" id="cepcadastroprojeto">
+                            <br>
+                            <label for="numresidencial">Número Residencial:</label><br>
+                            <input type="text" id="numresidencial">
+                        </div>
+                        <br>
+                        <div class="localizacaoprojeto2">
+                            <label for="ufcadastroprojeto">UF:</label><br>
+                            <input type="text" id="ufcadastroprojeto">
+                            <br>
+                            <label for="complementocadastroprojeto">Complemento:</label><br>
+                            <input type="text" id="complementocadastroprojeto">
+                        </div>
+                    </div>
+                </form>
+                <form class="ladobusuario1" action="">
+                    <label for="cnpjcadastrousuario">CNPJ:</label><br>
+                    <input type="text" id="cnpjcadastrousuario">
+                    <br><br><br>
+                    <label for="finalidadeempresa">Qual a finalidade do projeto/empresa?</label><br>
+                    <input type="text" id="finalidadeempresa">
+                    <br><br><br>
+                    <label for="motivocadastro">Qual o motivo do cadastro?</label><br>
+                    <input type="text" id="motivocadastro">
+                </form>
+            </div>
+            <br><br>
+            <p>**As informações pessoais estarão vinculadoas ao cadastro de seu projeto/empresa.</p>
+            <br>
+            <input class="buttenviarcad" type="button" value="Enviar">
+        </div>
+        <div class="logofortificar"><img src="./imagens/fortificar.png" alt="imagem do logo fortificar"></div>
+        <div class="logoiconweb"><img src="./imagens/iconweb.png" alt="imagem de um globo tecnológico."></div>
+    </main>
+    <footer>
+        &copy; Fortes Engenharia. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
