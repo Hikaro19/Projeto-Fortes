@@ -226,7 +226,7 @@ para todas as páginas ficarem iguais*/
     background-color: #E8F1F2;
     padding: 3rem;
     margin: auto;
-    height: 70vh;
+    height: 80vh;
     width: 35%;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(217, 214, 214, 0.719);
@@ -316,7 +316,7 @@ para todas as páginas ficarem iguais*/
     background-color: #E8F1F2;
     padding: 3rem;
     margin: auto;
-    height: 70vh;
+    height: 80vh;
     width: 35%;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(217, 214, 214, 0.719);
@@ -327,11 +327,13 @@ para todas as páginas ficarem iguais*/
     /* Garante que fique acima das imagens */
 }
 
-.inputfunc input{
+.inputfunc input {
     height: 30px;
     width: 300px;
     border-radius: 5px;
 }
+
+
 /* FINALIZA a página login do funcioário */
 
 
@@ -430,6 +432,7 @@ iframe {
     width: 825px;
     margin: auto;
     display: flex;
+    transition: 0.3s ease-in-out;
 }
 /* FINALIZA a página Auxílios */
 
@@ -566,9 +569,6 @@ iframe {
     border-radius: 5px;
 }
 
-.ladoausuario1{
-    padding: ;
-}
 .ladobusuario1 input{
     height: 30px;
     width: 400px;
@@ -615,8 +615,8 @@ iframe {
     background-color: #E8F1F2;
     padding: 3rem;
     margin: auto;
-    height: 60%;
-    width: 60%;
+    height: 80%;
+    width: 50%;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(217, 214, 214, 0.719);
     border-radius: 5px;
@@ -749,18 +749,37 @@ th, td {
     z-index: 1;
     /* Garante que fique acima das imagens */
 }
+
+.buscador input{
+    width: 500px;
+}
+
+.containerajuda{
+    display: flex;
+}
+
+.box-container{
+    margin: auto;
+    padding: 10px;
+    height: 30vh;
+    width: 45%;
+    border: 1px solid black;
+}
+
+.box{
+    border: 1px solid black;
+}
 /* FINALIZA a página AJUDA */
 
 
 /* PÁGINA FUNC/ACOMPANHAMENTO */
 .mainfuncacom{
     position: relative;
-    padding: 20px;
     display: flexbox;
     overflow: hidden;
 }
 
-.funcconteudo{
+.funconteudoacompanhamento{
     background-color: #E8F1F2;
     padding: 3rem;
     margin: auto;
@@ -852,8 +871,6 @@ th, td {
     border: 1px solid black;
     /* Garante que fique acima das imagens */
 }
-
-
 /* FINALIZA a página FUNC/RELATÓRIO */
 
 
@@ -878,6 +895,10 @@ th, td {
     font-size: 19px;
     z-index: 1;
     /* Garante que fique acima das imagens */
+
+    input {
+        width: 350px;
+    }
 }
 
 button {
@@ -901,4 +922,514 @@ footer {
     font-family: red rose;
     font-size: 20px;
     color: #ffffff;
+}
+
+@media screen and (max-width: 720px) {
+
+    header nav {
+        display: block;
+        padding: 0;   
+        height: fit-content;   
+    }
+    
+    header span a img {
+        /*imagem da fortes na nav*/
+        display: block;
+        width: 270px;
+        border-radius: 5px;
+        float: none;
+    }
+    
+    header span a img:hover {
+        width: 290px;
+        transition: 0.3s ease;
+    }
+    
+    header nav ul {
+        /*botões da nav em forma de lista*/
+        margin: 0;
+        text-align: center;
+        display: block;
+        gap: 4rem;
+        align-content: center;
+    }
+    
+    header nav ul li {
+        display: block;
+    }
+    
+    header nav ul li a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+    
+    .butnavp {
+        /*forma do botão dos links da nav pequenos*/
+        height: 40px;
+        width: 70%;
+        box-shadow: none;
+    }
+    
+    .butnav {
+        /*forma do botão dos links da nav grande*/
+        height: 40px;
+        width: 70%;
+        box-shadow: none;
+    }
+    
+    .butnavpactive {
+        /*forma do botão dos links da nav pequenos clicado*/
+        height: 40px;
+        width: 70%;
+        box-shadow: none;
+    }
+    
+    .butnavactive {
+        /*forma do botão dos links da nav grande clicado*/
+        height: 40px;
+        width: 70%;
+        box-shadow: none;
+    }  
+    
+    /* PÁGINA LANDING PAGE (primeria tela) */
+    .mainindex {
+        /*main container (pai)*/
+        position: relative;
+        padding: 0;
+        display: flexbox;
+        overflow: hidden;
+    }
+    
+    /*estabilização das imagens logofortificar e logoweb 
+    para todas as páginas ficarem iguais*/
+    .logofortificar {
+        bottom: 20px;
+        left: 8px;
+        width: 80px;
+        z-index: -1;
+        /* Ajusta o tamanho */
+    }
+    
+    .logoiconweb {
+        bottom: -60px;
+        right: -70px;
+        width: 200px;
+        /* Ajusta o tamanho */
+    }
+    
+    .indexconteudo {
+        background-color: #E8F1F2;
+        padding: 1.5rem;
+        height: 60vh;
+        width: 80%;
+        text-align: center;
+    
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        p {
+            text-align: center;
+        }
+    }
+    
+    .indexconteudo img {
+        width: 90%;
+    }
+    /* FINALIZA a página Landing page (inicial) */
+    
+    /* PÁGINA DE LOGIN */
+    .mainlogin {
+        position: relative;
+        padding: 0;
+    }
+    
+    .loginconteudo {
+        padding: 1.5rem;
+        height: 50vh;
+        width: 80%;
+        text-align: center;
+        font-size: 15px;
+    
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .inputemailsenha input {
+        height: 25px;
+        width: 230px;
+    }
+    /* FINALIZA a página Login */
+    
+    /* PÁGINA DE CADASTRO*/
+    .maincadastro {
+        padding: 0;
+    }
+    
+    .cadastroconteudo {
+        padding: 1.5rem;
+        height: 85vh;
+        width: 80%;
+        font-size: 15px;
+    }
+    
+    .cadastroconteudo2 {
+        display: block;
+        font-size: 15px;
+    }
+    
+    .ladoa input,
+    .ladob input {
+        height: 25px;
+        width: 250px;
+    }
+    /* FINALIZA a página Cadastro */
+    
+    
+    /* PÁGINA FUNCIONÁRIO */
+    .mainfunc{
+        padding: 0;
+    }
+    
+    .funcconteudo{
+        padding: 1.5rem;
+        height: 50vh;
+        width: 80%;
+        font-size: 15px;
+    }
+    
+    .inputfunc input{
+        width: 230px;
+    }
+    /* FINALIZA a página login do funcioário */
+    
+    
+    /* PÁGINA ESQUECI MINHA SENHA */
+    .mainesquecisenha{
+        padding: 0;
+    }
+    
+    .esquecisenhaconteudo{
+        padding: 1.5rem;
+        height: 60vh;
+        width: 80%;
+        font-size: 15px;
+    }
+    
+    .inputrecuperarsenha input{
+        width: 230px;
+    }
+    
+    .inputrecuperarsenha p{
+        font-size: 12px;
+    }
+    /* FINALIZA a página Esqueci minha senha */
+    
+    
+    /* PÁGINA AUXÍLIOS */
+    .mainauxilio{
+        padding: 0;
+        display: block;
+    }
+    
+    .auxiliosconteudo{
+        padding: 1.5rem;
+        height: 130%;
+        width: 80%;       
+        font-size: 15px;
+    }
+    
+    /* Layout da página de auxílios */
+    .container {
+        width: 20px;
+        align-items: center;
+        display: block;
+        margin: 0;
+    }
+    
+    .item1 {
+        width: 225px;
+        justify-content: flex-start;
+    }
+    
+    .item2 {
+        width: 260px;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+    
+    .item1-2 {
+        width: 90px;
+        height: 200px;
+        justify-content: flex-start;
+    }
+    
+    iframe {
+        height: 225px;
+        width: 350px;
+        margin: auto;
+        display: flex;
+    }
+    /* FINALIZA a página Auxílios */
+    
+    
+    /* PÁGINA NOSSA EQUIPE */
+    .mainequipe{
+        padding: 0;
+        display: block;
+    }
+    
+    .equipeconteudo{
+        padding: 1.5rem;
+        height: 90%;
+        width: 80%;
+        font-size: 15px;
+
+        p img{
+            width: 340px;
+        }
+    }
+    
+    /* Layout da página dentro do conteúdo */
+    .item1-2 {
+        width: 150px;
+        height: 200px;
+    }
+    
+    .item2-2 {
+        width: 260px;
+    }
+    
+    .item3-2 {
+        width: 100px;
+        height: 150px;
+        justify-content: flex-end;
+    }
+    
+    .item4-2 {
+        width: 260px;
+    }
+    
+    .item5-2 {
+        width: 20px;
+        margin: 0;
+        display: block;
+        padding-top: 60px;
+    }
+    /* FINALIZA a página nossa equipe */
+    
+    
+    /* PÁGINA PROJETOS */
+    .mainprojeto{
+        padding: 0;
+    }
+    
+    .projetoconteudo{
+        padding: 1.5rem;
+        height: 100%;
+        width: 80%;
+        font-size: 15px;
+    }
+    
+    /* Layout da tela de projetos */
+    .item1-3 {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .item2-3 {
+        width: 250px;
+        padding-left: 0;
+    }
+    /* FINALIZA a página projetos */
+    
+    
+    /* PÁGINA USUÁRIO/CADASTRO */
+    .mainusuario{
+        padding: 0;
+    }
+    
+    .usuarioconteudo{
+        padding: 1.5rem;
+        height: 60%;
+        width: 80%;
+        font-size: 15px;
+    }
+    
+    /* Layout dos inputs da tela de cadastro do usuário */
+    .usuarioconteudo2{
+        display: block;
+        font-size: 15px;
+    }
+    
+    .ladoausuario1 input{
+        height: 30px;
+        border-radius: 5px;
+    }
+    
+    .ladobusuario1 input{
+        width: 250px;
+    }
+    
+    .localizacaoprojeto{
+        display: block;
+        font-size: 15px;
+    }
+    
+    .nomecdp input{
+        width: 250px;
+    }
+    
+    .localizacaoprojeto1 input,
+    .localizacaoprojeto2 input{
+        width: 250px;
+    }
+    
+    /* PÁGINA USUÁRIO/HISTÓRICO */
+    .mainhistoricousu{
+        padding: 0;
+    }
+    
+    .historicousuconteudo{
+        padding: 1.5rem;
+        height: 650px;
+        width: 80%;
+        font-size: 15px;
+
+        input {
+            width: 280px;
+        }
+    }
+
+    /* FINALIZA a página USUÁRIO/HISTÓRICO */
+    
+    
+    /* PÁGINA USUÁRIO/FINANCEIRO */
+    .mainusufinance{
+        padding: 0;
+    }
+    
+    .usuariofinaconteudo{
+        padding: 1.5rem;
+        height: 60%;
+        width: 80%;
+        font-size: 15px;
+    }
+    
+    .finance{
+        padding: 1.5rem;  
+        width: 90%;
+        font-size: 15px;
+    }
+    /* FINALIZA a página USUÁRIO/FINANCEIRO */
+    
+    
+    /* PÁGINA PATROCINADORES */
+    .mainpatro{
+        padding: 0;
+    }
+    
+    .patroconteudo{
+        padding: 1.5rem;
+        width: 80%;
+        font-size: 15px;
+    }
+    /* FINALIZA a página PATROCINADORES */
+
+    /* PÁGINA FUNC/ACOMPANHAMENTO */
+.mainfuncacom{
+    padding: 0;
+}
+
+.funconteudoacompanhamento{
+    padding: 1.5rem;
+    width: 80%;
+    text-align: center;
+    font-size: 15px;
+
+    input {
+        width: 280px;
+    }
+}
+/* FINALIZA a página FUNC/ACOMPANHAMENTO */
+
+/* PÁGINA FUNC/RELATÓRIO */
+.mainrelatorio{
+    padding: 0;
+}
+
+.relatorioconteudo{
+    padding: 1.5rem;
+    width: 80%;
+    font-size: 15px;
+}
+
+.relatorioconteudo2{
+    display: block;
+}
+
+.inforel{
+    padding: 1.5rem;
+    width: 80%;
+    font-size: 15px;
+}
+
+.cabecalho{
+    display: flex;
+}
+
+.cabecalho2{
+    margin: auto;
+    display: block;
+}
+
+.ladobrelatorio div{
+    padding: 1.5rem;
+    width: 80%;
+    font-size: 15px;
+}
+/* FINALIZA a página FUNC/RELATÓRIO */
+
+/* PÁGINA FUNC/SOLICITAÇÕES */
+.mainsolicitacoes{
+    padding: 0;
+}
+
+.soliciconteudo{
+    padding: 1.5rem;
+    width: 80%;
+    font-size: 15px;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    border-radius: 8px;
+}
+/* FINALIZA a página FUNC/SOLICITAÇÕES */
+    
+    
+    /* PÁGINA AJUDA */
+    .mainajuda{
+        padding: 0;
+    }
+    
+    .ajudaconteudo{
+        background-color: #E8F1F2;
+        padding: 1.5rem;
+        width: 80%;
+        font-size: 15px;
+
+    .buscador input{
+        width: 270px;
+    }
+}
+
+    footer {
+        height: 60px;
+        font-size: 12px;
+    }
 }

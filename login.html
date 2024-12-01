@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="js.js" type="text/JavaScript"></script>
 </head>
 
 <body>
     <header>
-        <span><a href="./index.html" target="_self"><img src="./imagens/logofortes.png"
-            alt="Logo da Fortes."></a></span>
+        <span>
+            <a href="./index.html" target="_self">
+                <img src="./imagens/logofortes.png" alt="Logo da Fortes.">
+            </a>
+        </span>
         <nav>
             <ul>
-                <li class="butnavpactive"><a href="./login.html" target="_self" rel="next">Login</a></li>
-                <li class="butnavp"><a href="./auxilios.html" target="_self" rel="next">Auxílios</a></li>
-                <li class="butnav"><a href="./equipe.html" target="_self" rel="next">Nossa Equipe</a></li>
-                <li class="butnavp"><a href="./projetos.html" target="_self" rel="next">Projetos</a></li>
-                <li class="butnav"><a href="./patrocinadores.html" target="_self" rel="next">Patrocinadores</a></li>
-                <li class="butnavp"><a href="./ajuda.html" target="_self" rel="next">Ajuda</a></li>
-                <li class="butnav"><a href="./faleconosco.html" target="_self" rel="next">Fale Conosco</a></li>
+                <li><a class="butnavpactive" href="./login.html" target="_self" rel="next">Login</a></li>
+                <li><a class="butnavp" href="./auxilios.html" target="_self" rel="next">Auxílios</a></li>
+                <li><a class="butnav" href="./equipe.html" target="_self" rel="next">Nossa Equipe</a></li>
+                <li><a class="butnavp" href="./projetos.html" target="_self" rel="next">Projetos</a></li>
+                <li><a class="butnav" href="./patrocinadores.html" target="_self" rel="next">Patrocinadores</a></li>
+                <li><a class="butnavp" href="./ajuda.html" target="_self" rel="next">Ajuda</a></li>
+                <li><a class="butnav" href="./faleconosco.html" target="_self" rel="next">Fale Conosco</a></li>
             </ul>
         </nav>
     </header>
@@ -31,34 +33,45 @@
             <h1>Faça o seu login:</h1>
             <br>
             <br>
-            <form class="inputemailsenha" action="processarForm.php" method="get">
+            <form class="inputemailsenha" onsubmit="logar(); return false;">
                 <label for="email">E-mail:</label><br>
-                <input type="text" id="email">
-                <br>
-                <br>
+                <input type="text" id="email" placeholder="Digite seu e-mail">
+                <br><br>
                 <label for="senha">Senha:</label><br>
-                <input type="text" id="senha">
+                <input type="password" id="senha" placeholder="Digite sua senha">
+                <br><br>
+                <input class="entrarbutton" type="submit" value="Entrar">
             </form>
             <br>
             <a href="./esquecisenha.html">Esqueci minha senha</a>
-            <br>
-            <br>
-            <form action="">
-                <a href="./usuario.html"><input class="entrarbutton" type="button" value="Entrar"></a>
-                <br><br>
-                <a href="./cadastro.html" target="_self" rel="next"><input class="cadastrobutton" type="button"
-                        value="Cadastrar-se"></a>
-            </form>
-            <br>
+            <br><br>
+            <input class="cadastrobutton" type="button" value="Cadastrar-se" onclick="location.href='./cadastro.html';">
+            <br><br>
             <a href="./funcionario.html" target="_self" rel="next">Sou funcionário</a>
-            <br>
+            <br><br><br>
         </div>
-        <div class="logofortificar"><img src="./imagens/fortificar.png" alt="imagem do logo fortificar"></div>
-        <div class="logoiconweb"><img src="./imagens/iconweb.png" alt="imagem de um globo tecnológico."></div>
+        <div class="logofortificar"><img src="./imagens/fortificar.png" alt="Imagem do logo Fortificar"></div>
+        <div class="logoiconweb"><img src="./imagens/iconweb.png" alt="Imagem de um globo tecnológico."></div>
     </main>
     <footer>
         &copy; Fortes Engenharia. Todos os direitos reservados.
     </footer>
+
+    <!-- Validação e redirecionamento pelo JavaScript -->
+    <script>
+        function logar() {
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+
+            // Credenciais fictícias para teste
+            if (email === "donatario01" && senha === "dona123") {
+                alert('Login efetuado com sucesso.');
+                location.href = "./usuario.html"; // Redireciona para a página de usuário
+            } else {
+                alert('Usuário ou senha incorretos.');
+            }
+        }
+    </script>
 </body>
 
 </html>
