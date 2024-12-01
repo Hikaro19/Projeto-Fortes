@@ -816,32 +816,92 @@ td {
 .fale2,
 .fale3,
 .fale4,
-.fale5{
+.fale5 {
     height: 60px;
     width: 200px;
-border: 1px solid black;
-margin: auto ;
-border-radius: 10px;
+    border: 1px solid black;
+    margin: auto;
+    border-radius: 10px;
 }
 
-.item3-4 {
+.containerfale2 {
+    width: 825px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin: auto;
+    padding-left: 40px;
+}
+
+.containerfale2um {
+    width: 200px;
+    height: 280px;
+    border: 2px dashed black;
+    text-align: center;
+    border-radius: 8px;
+
+    p {
+        font-size: 16px;
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+.containerfale2dois {
     width: 640px;
     height: 400px;
-    border: 2px solid black;
+    border: 2px dashed black;
     margin: auto;
     display: inline-block;
+    border-radius: 8px;
+
+    input{
+        height: 30px;
+        width: 240px;
+        border-radius: 10px;
+    }
 }
 
-.item4-4 {
+.contfale01{
+    display: flex;
+    
+}
+
+.contfale {
     width: 200px;
     height: 200px;
     justify-content: center;
-    margin-left: 50px;
-    margin-top: 100px;
+    margin: auto;
+    margin-top: 70px;
 }
 
-.item4-4> ::placeholder {
+.contfale>::placeholder {
     text-align: center;
+}
+
+.contfale1 {
+    width: 300px;
+    margin: auto;
+}
+
+.contfale1 select {
+    margin-top: 70px;
+    margin-right: 5px;
+    width: 260px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.contfale1 textarea {
+    margin-left: 13px;
+    height: 135px;
+    border-radius: 10px;
+}
+
+.contfale1 button{
+    background-color: rgb(27, 152, 224);
+    margin-right: 190px;
 }
 
 /* FINALIZA a página FALE CONOSCO */
