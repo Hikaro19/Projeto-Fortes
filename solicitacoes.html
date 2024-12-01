@@ -73,6 +73,21 @@
     <footer>
         &copy; Fortes Engenharia. Todos os direitos reservados.
     </footer>
+
+    <script>
+        function logar() {
+            var email = document.getElementById('email').value;
+            var senha = document.getElementById('senha').value;
+
+            // Credenciais fictícias para teste
+            if (email === "donatario01" && senha === "dona123") {
+                alert('Login efetuado com sucesso.');
+                location.href = "./usuario.html"; // Redireciona para a página de usuário
+            } else {
+                alert('Usuário ou senha incorretos.');
+            }
+        }
+    </script>
 </body>
 
 </html>
